@@ -1,0 +1,6 @@
+library(readr)
+StudentsPerformance <- read_csv("StudentsPerformance.csv")
+View(StudentsPerformance)
+attach(StudentsPerformance)
+lbl <- c(bachelorsdegree=11 ,somecollege=15,masterdegree=6,highschool=19,somehighschool=18,associatedegree=22)
+barplot(lbl,col="red")
